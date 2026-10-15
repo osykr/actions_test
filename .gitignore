@@ -1,0 +1,6 @@
+.dart_tool/
+build/
+ios/
+.flutter-plugins*
+.packages
+.DS_Store
