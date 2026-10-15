@@ -15,3 +15,9 @@ jobs:
         run: flutter create . --platforms=ios --project-name hello_flutter
       - name: Build (simulator, no codesign)
         run: flutter build ios --simulator --no-codesign
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-simulator-app
+          path: build/ios/iphonesimulator/Runner.app
+          retention-days: 7
